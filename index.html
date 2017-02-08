@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Exploding Kittens</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <nav>
@@ -45,24 +47,26 @@
                 <a name="cards">
                     <h2>Cards</h2>
 
-                    <div class="card">
-                        <h3>Explode</h3>
-                        <img src="/images/explode.png">
-                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <h3>Explode</h3>
+                            <img src="/images/explode.png">
+                        </div>
 
-                    <div class="card">
-                        <h3>Defuse</h3>
-                        <img src="/images/defuse.png">
-                    </div>
+                        <div class="card">
+                            <h3>Defuse</h3>
+                            <img src="/images/defuse.png">
+                        </div>
 
-                    <div class="card">
-                        <h3>Nope</h3>
-                        <img src="/images/nope.png">
+                        <div class="card">
+                            <h3>Nope</h3>
+                            <img src="/images/nope.png">
+                        </div>
                     </div>
                 </a>
             </div>
 
-            <div class="rules">
+            <div class="rules clear">
                 <a name="rules">
                     <h2>Rules</h2>
                 </a>
@@ -94,7 +98,7 @@
             <p>Exploding Kittens is a neat game!</p>
             <form id="email-signup">
                 <input type="text" name="full_name" placeholder="name">
-                <input type="text" name="email" placeholder="email">
+                <input type="text" name="email" placeholder="email address">
                 <input type="submit" value="Email Signup">
             </form>
         </footer>
