@@ -17,11 +17,23 @@ function createAboutList(aboutItems){
 function removeAboutList(){
   let ul = document.querySelector('.about ul')
   let children = ul.children
+
   // this does not work because children length is changing while we
   // are in this for loop
-  for (let i =0; i <= children.length; i++) {
-    let node = children[i]
-    console.log("removing ", i, node);
+  // for (let i =0; i <= children.length; i++) {
+  //   let node = children[i]
+  //   console.log("removing ", i, node);
+  //   ul.removeChild(node)
+  // }
+
+  let nodesToDelete = []
+  for (let node of children){
+    nodesToDelete.push(node)
+  }
+  // this does not work because children length is changing while we
+  // are in this for loop
+  for (let node of nodesToDelete) {
+    console.log('removing', node);
     ul.removeChild(node)
   }
 }
@@ -65,7 +77,7 @@ function defuseCard(){
 
 document.addEventListener("DOMContentLoaded", function(){
   createAboutList(aboutItems)
-  // removeAboutList()
+  removeAboutList()
   createExplodeCard()
 
   setTimeout(function(){defuseCard()}, 2000)
