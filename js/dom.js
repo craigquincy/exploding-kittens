@@ -1,4 +1,13 @@
 // I DO:
+ // <li>
+ //    A CARD GAME FOR PEOPLE WHO ARE INTO
+ // </li>
+ // <li>
+ //     KITTENS AND EXPLOSIONS AND LASER BEAMS
+ // </li>
+ // <li>
+ //     AND SOMETIMES GOATS
+ // </li>
 
 
 // WE DO:
