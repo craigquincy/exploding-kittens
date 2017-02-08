@@ -8,7 +8,15 @@
 // </div>
 
 
-// YOU DO: recreate the nav menu items, you will need to start by making th UL elem
+// YOU DO: recreate the nav menu items
+// HERE's a plan to follow:
+// create the UL
+// create an LI
+// create an A and setAttributes for the 'href' and 'id'
+// append the A to LI
+// append the LI to the UL
+// repeat for each LI ... maybe you want to use a loop or functions to help
+// finally add the UL to the NAV below the logo image
 //            <ul class="menu">
 //                <li>
 //                    <a href="#about" id="aboutlink">Exploding Kittens</a>
