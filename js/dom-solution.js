@@ -18,17 +18,22 @@ function removeAboutList(){
   let ul = document.querySelector('.about ul')
   let children = ul.children
 
+  // remove any items with AND in them
   // this does not work because children length is changing while we
   // are in this for loop
   // for (let i =0; i <= children.length; i++) {
   //   let node = children[i]
-  //   console.log("removing ", i, node);
-  //   ul.removeChild(node)
+  //   if (node.innerText.includes("AND")){
+  //     console.log("removing ", i, node);
+  //     ul.removeChild(node)
+  //   }
   // }
 
   let nodesToDelete = []
   for (let node of children){
-    nodesToDelete.push(node)
+    if (node.innerText.includes("AND")) {
+      nodesToDelete.push(node)
+    }
   }
   // this does not work because children length is changing while we
   // are in this for loop
