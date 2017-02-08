@@ -16,11 +16,11 @@ function createAboutList(aboutItems){
 
 function removeAboutList(){
   let ul = document.querySelector('.about ul')
-  let childNodes = ul.childNodes
-  // this does not work because childNodes length is changing while we
+  let children = ul.children
+  // this does not work because children length is changing while we
   // are in this for loop
-  for (let i =0; i <= childNodes.length; i++) {
-    let node = childNodes[i]
+  for (let i =0; i <= children.length; i++) {
+    let node = children[i]
     console.log("removing ", i, node);
     ul.removeChild(node)
   }
