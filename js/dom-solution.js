@@ -4,9 +4,9 @@ let aboutItems = [
   'AND SOMETIMES GOATS'
 ]
 
-function createAboutList(aboutItems){
+function createAboutList(aboutItems) {
   let ul = document.querySelector('.about ul')
-  for (let text of aboutItems){
+  for (let text of aboutItems) {
     console.log("appending ", text, " to ", ul);
     let li = document.createElement('li')
     li.innerHTML = text
@@ -14,7 +14,7 @@ function createAboutList(aboutItems){
   }
 }
 
-function removeAboutList(){
+function removeAboutList() {
   let ul = document.querySelector('.about ul')
   let children = ul.children
 
@@ -30,7 +30,7 @@ function removeAboutList(){
   // }
 
   let nodesToDelete = []
-  for (let node of children){
+  for (let node of children) {
     if (node.innerText.includes("AND")) {
       nodesToDelete.push(node)
     }
@@ -49,12 +49,7 @@ function removeAboutList(){
 //     <h3>Explode</h3>
 //     <img src="/images/explode.png">
 // </div>
-function createExplodeCard(){
-  let card = createCard('Explode', "/images/explode.png")
-  document.querySelector('.cards-container').appendChild(card)
-}
-
-function createCard(text, imageUrl){
+function createCard(text, imageUrl) {
   let div = document.createElement('div')
   div.classList.add('card')
 
@@ -69,8 +64,12 @@ function createCard(text, imageUrl){
   return div
 }
 
+function createExplodeCard() {
+  let card = createCard('Explode', "/images/explode.png")
+  document.querySelector('.cards-container').appendChild(card)
+}
 
-function defuseCard(){
+function defuseCard() {
   let explodeCard = document.querySelector('.cards-container').firstChild
   console.log("explodeCard", explodeCard);
 
@@ -80,12 +79,12 @@ function defuseCard(){
 }
 
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", () => {
   createAboutList(aboutItems)
   removeAboutList()
   createExplodeCard()
 
-  setTimeout(function(){defuseCard()}, 2000)
+  setTimeout(() => { defuseCard() }, 2000)
 })
 
 
