@@ -1,16 +1,16 @@
 // I DO:
- // <li>
- //    A CARD GAME FOR PEOPLE WHO ARE INTO
- // </li>
- // <li>
- //     KITTENS AND EXPLOSIONS AND LASER BEAMS
- // </li>
- // <li>
- //     AND SOMETIMES GOATS
- // </li>
+// <li>
+//    A CARD GAME FOR PEOPLE WHO ARE INTO
+// </li>
+// <li>
+//     KITTENS AND EXPLOSIONS AND LASER BEAMS
+// </li> // <li>
+//     AND SOMETIMES GOATS
+// </li>
 
 
 // WE DO:
+// create the html for the explode card and add it to the .cards-container
 // <div class="card">
 //     <h3>Explode</h3>
 //     <img src="/images/explode.png">
